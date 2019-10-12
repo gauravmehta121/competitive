@@ -1,0 +1,41 @@
+print a given matrix in spiral form
+
+
+#include<iostream.h>
+# define r 6
+# define c 3
+
+void reversespiralprint( int m , int n, int a[r][c])
+{
+ long int b[100];
+ 
+int i, k=0,l=0;
+ int z=0;
+int size=m*n;
+while(k<m && l<n)
+{
+ int val;
+for( i=l;i<n;i++)
+{
+val=a[k][i];
+b[z]=val;
+++z;
+}
+k++;
+ for(i=k;i<m;++i)
+{
+val=a[i][n-1];
+b[z]=val;
+++z;
+}
+n--;
+if(k<m)
+{
+for(i=n-1;i>=1;--1)
+{
+val=a[m-1][i];
+b[z]=val;
+++z;
+}
+m--;
+}
