@@ -1,0 +1,26 @@
+#include<stdio.h>
+#inClude<conio.h>
+ {
+int data ; 
+struct Node*next;
+};
+
+int main()
+{
+struct node*head=NULL;
+struct node*second=NULL;
+STRUCT node*third=NULL;
+
+head= (struct node*) malloc(sizeof(struct Node));
+second= ( struct node *) malloc(sizeof(struct node ));
+third = ( struct node*) malloc(sizeof(struct node));
+
+head->data=1;
+head->next=second;
+second->data = 2;
+second->next=third;
+third->data = 3 ;
+third-> next= null;
+
+return 0;
+}

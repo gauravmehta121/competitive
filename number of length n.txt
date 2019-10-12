@@ -1,0 +1,12 @@
+
+Numbers of Length N having digits A and B and whose sum of digits contain only digits A and B
+
+
+
+Input: N = 3, A = 1, B = 3
+Output: 1
+Possible numbers of length 3 are 113, 131, 111, 333, 311, 331 and so on…
+But only 111 is a valid number since its sum of digits is 3 (contains digits A and B only)
+
+Input: N = 10, A = 2, B = 3
+Output: 165

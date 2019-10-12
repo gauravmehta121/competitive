@@ -1,0 +1,29 @@
+
+ to print repeating elements in the array;
+
+
+#include<bits/stdc++.h>
+using namespace std; 
+  
+void printRepeating(int arr[], int size) 
+{ 
+    int i, j; 
+    printf(" Repeating elements are "); 
+    for(i = 0; i < size; i++) 
+        for(j = i + 1; j < size; j++) 
+        if(arr[i] == arr[j]) 
+            cout << arr[i] << " "; 
+}  
+  
+
+int main() 
+{ 
+    int arr[] = {2,2,3,4,5,6,7,7,8}; 
+    int arr_size = sizeof(arr)/sizeof(arr[0]);  
+    printRepeating(arr, arr_size); 
+} 
+
+
+
+
+
