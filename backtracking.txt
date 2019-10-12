@@ -1,0 +1,17 @@
+backtracking
+  
+
+void findsolutions( n , otherparams):
+if (find a solution):
+solutionsfound=solutionsfound + 1 ;
+displaysolutions();
+if( solutionsfound>= solutionstarget);
+system.exit(0);
+ return;
+for( val = first to last) :
+if (isvalid(val,n)) :
+applyvalue(val,n);
+findsolutions(n+1, otherparams);
+removevalue(val,n);
+
+
